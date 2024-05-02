@@ -22,5 +22,14 @@ $f3->route('GET /', function() {
     echo $view->render('views/home.html');
 });
 
+// survey route
+$f3->route('GET /survey', function() {
+    // echo '<h1>Hello survey!</h1>';
+
+    // Render a view page
+    $view = new Template();
+    echo $view->render('views/survey.html');
+});
+
 // Run Fat-Free
 $f3->run();
